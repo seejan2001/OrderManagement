@@ -1,0 +1,17 @@
+.res-foodcontainer{
+    display: flex;
+    flex-direction: row;
+    border:1px solid lightgreen;
+    width:70%;
+    align-items: center;
+    justify-content: space-around;
+    height:450px;
+    overflow: scroll;
+    flex-wrap: wrap;
+}
+.res-foodcart{
+    padding:5px;
+    border:1px solid black;
+    height:250px;
+    width:250px;
+}

@@ -1,24 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import FoodCart from "./foodCart/FoodCart";
+import NavBar from "./NavBar/NavBar";
+import { useState } from "react";
+import Footer from "./footer/Footer";
 
 function App() {
+  const [icon, setIcon] = useState(1);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <NavBar setIcon={setIcon} icon={icon} />
+      <FoodCart icon={icon} />
+      <Footer />
+    </>
   );
 }
 
